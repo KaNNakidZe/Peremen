@@ -15,6 +15,11 @@ public class Main {
     box = box / 4;
     System.out.println(box);
 
-    
+    var liftingCapasity = 50;
+    var staffWeight = 20;
+    var capasityLeft = liftingCapasity - staffWeight;
+    System.out.println("Еще можно положить " + capasityLeft + " кг вещей");
+
+
     }
 }
