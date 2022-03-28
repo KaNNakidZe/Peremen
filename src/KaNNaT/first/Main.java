@@ -20,6 +20,10 @@ public class Main {
     var capasityLeft = liftingCapasity - staffWeight;
     System.out.println("Еще можно положить " + capasityLeft + " кг вещей");
 
+    var appleWeight = 2;
+    var orangesWeight = 3;
+    var fruitWeight = appleWeight + orangesWeight;
+    System.out.println("Общий вес фруктов " + fruitWeight);
 
     }
 }
