@@ -25,5 +25,18 @@ public class Main {
     var fruitWeight = appleWeight + orangesWeight;
     System.out.println("Общий вес фруктов " + fruitWeight);
 
+    var meatWeight = 4;
+    var waterWeight = 5;
+    var tomatoesWeight = 2;
+    var cucumbersWeight = 2;
+    var peppersWeight = 2;
+    var zucchiniWeight = 2;
+    var vegetablesWeight = tomatoesWeight + cucumbersWeight + peppersWeight + zucchiniWeight;
+    var productsWeight = fruitWeight + vegetablesWeight + meatWeight + waterWeight;
+    System.out.println("Общий вес продуктов " + productsWeight +  " кг!");
+
+    var leftWeight = liftingCapasity - staffWeight - productsWeight;
+    System.out.println("Места осталось " + leftWeight + " кг!");
+    
     }
 }
