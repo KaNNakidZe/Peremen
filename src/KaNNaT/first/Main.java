@@ -16,8 +16,8 @@ public class Main {
     System.out.println(box);
 
     var liftingCapasity = 50;
-    var staffWeight = 20;
-    var capasityLeft = liftingCapasity - staffWeight;
+    var stuffWeight = 20;
+    var capasityLeft = liftingCapasity - stuffWeight;
     System.out.println("Еще можно положить " + capasityLeft + " кг вещей");
 
     var appleWeight = 2;
@@ -35,8 +35,27 @@ public class Main {
     var productsWeight = fruitWeight + vegetablesWeight + meatWeight + waterWeight;
     System.out.println("Общий вес продуктов " + productsWeight +  " кг!");
 
-    var leftWeight = liftingCapasity - staffWeight - productsWeight;
+    var leftWeight = liftingCapasity - stuffWeight - productsWeight;
     System.out.println("Места осталось " + leftWeight + " кг!");
-    
+
+    productsWeight = productsWeight * 2;
+    System.out.println("Теперь вес продуктов " + productsWeight);
+
+    leftWeight = liftingCapasity - stuffWeight - productsWeight;
+    System.out.println("Места осталось " + leftWeight + " кг!");
+
+    var overload = (stuffWeight + productsWeight) % liftingCapasity;
+    System.out.println("Перегруз на " + overload + " кг!");
+
+    var productsInOneCar = productsWeight / 2;
+    System.out.println("Продуктов в одной машине " + productsInOneCar);
+
+    short bananes = 270;
+    System.out.println("Бананов " + bananes + " кг!");
+
+    float sugar = 3;
+    float onePortion = sugar / 4;
+    System.out.println("Одна порция сахара весит " + onePortion + " кг");
+
     }
 }
